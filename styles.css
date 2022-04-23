@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+.link{
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 800;
+  display: block;
+  position: relative;
+  animation-name: animat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes animat{
+  0%{
+    color: red;
+    top: 2px;
+  }
+  50%{
+    color: salmon;
+    top: 10px;
+  }
+  100%{
+    color: rgb(250, 175, 175);
+    top: 20px;
+  }
+}
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  height: 100vh;
+}
+.parent{
+  height: 100vh;
+  background: linear-gradient(145deg, red 0% 7%,rgb(255, 166, 0) 7% 14%, salmon 14% 20%, rgba(0, 0, 0, 0.4) 20% 80%, blue 80% 87%, rgb(0, 238, 255) 87% 94%, rgb(7, 247, 7) 94% 100%);
+}
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 6rem;
+  color: #4ECCA3;
+}
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 15px;
+}
+img {
+  width: 80%;
+}
+footer {
+  margin-top: 4%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+.refresh{
+  padding: 15px 10px 15px 25px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-size: 25px;
+  border: 5px solid red;
+  border-radius: 70% 0 10px 0;
+  transition: .5s;
+}
+.refresh:hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+}
+@media(max-width: 740px){
+  .container {
+    width: 90%;
+  }
+  h1{
+    font-size: 4rem;
+  }
+}
+@media(max-width: 574px){
+  .container {
+    width: 90%;
+  }
+  h1{
+    font-size: 4rem;
+  }
+  img{
+    width: 60%;
+  }
+}
