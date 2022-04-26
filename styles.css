@@ -95,6 +95,7 @@ footer {
   }
   h1{
     font-size: 4rem;
+    height: 170px;
   }
 .link{
   animation-play-state: paused;
@@ -106,8 +107,12 @@ footer {
   }
   h1{
     font-size: 4rem;
+    height: 170px;
   }
   img{
     width: 60%;
+  }
+  .link{
+    animation-play-state: paused;
   }
 }
