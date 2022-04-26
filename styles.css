@@ -37,15 +37,18 @@
     top: 20px;
   }
 }
+html{
+  height: 100%;
+}
 body {
   background-image: url('background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(5px);
-  height: 100vh;
+  height: 100%;
 }
 .parent{
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(145deg, red 0% 7%,rgb(255, 166, 0) 7% 14%, salmon 14% 20%, rgba(0, 0, 0, 0.4) 20% 80%, blue 80% 87%, rgb(0, 238, 255) 87% 94%, rgb(7, 247, 7) 94% 100%);
 }
 h1 {
